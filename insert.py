@@ -34,6 +34,10 @@ curs.execute(sql,(15,'취업/창업'))
 curs.execute(sql,(16,'해외'))
 curs.execute(sql,(17,'기타'))
 
+conn.commit()
+conn.close()
+curs = conn.cursor()
+
 sql = "insert into application (application_id,application_classification) values(%d, %s)"
 
 curs.execute(sql,(1,'제한없음'))
@@ -42,6 +46,10 @@ curs.execute(sql,(3,'대학생'))
 curs.execute(sql,(4,'청소년'))
 curs.execute(sql,(5,'어린이'))
 curs.execute(sql,(6,'기타'))
+
+conn.commit()
+conn.close()
+curs = conn.cursor()
 
 sql = "insert into organizer (host_code_id,host_classification) values(%d, %s)"
 
@@ -54,6 +62,10 @@ curs.execute(sql,(36,'중견/중소/벤처기업'))
 curs.execute(sql,(37,'비영리/협회/재단'))
 curs.execute(sql,(38,'해외'))
 curs.execute(sql,(39,'기타'))
+
+conn.commit()
+conn.close()
+curs = conn.cursor()
 
 sql = "insert into responsible_field (re_field_id, field_name) values (%d, %s)"
              

@@ -1,6 +1,3 @@
-!pip install pymysql
-!pip install selenium
-!conda install -c conda-forge tqdm
 # Database 관련
 import pymysql
 class MysqlController:

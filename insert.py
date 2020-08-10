@@ -14,7 +14,7 @@ conn = pymysql.connect(
 curs = conn.cursor()
 
 # 가상 회원 정보를 삽입하기 위한 SQL 쿼리문을 작성하여 저장
-sql = "insert into field (field_id,field_classification) values(%d, %s)"
+sql = "insert into field (field_id,field_classification) values(%s, %s)"
 
 curs.execute(sql,(1,'기획/아이디어'))
 curs.execute(sql,(2,'광고/마케팅'))

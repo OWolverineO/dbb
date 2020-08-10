@@ -113,7 +113,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 def get_driver():
     driver = webdriver.Chrome(
-        executable_path="chromedriver.exe"
+        executable_path="/var/www/html/dbb/chromedriver.exe"
     )
     return driver
 
